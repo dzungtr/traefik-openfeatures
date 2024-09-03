@@ -1,4 +1,4 @@
-# Traefil OpenFeature plugin
+# Traefik OpenFeature plugin
 
 The plugin take header from request and evaluate the configuration feature flag against an Open Feature compliance backend. Then, forward the request to downstream service with enrich header
 
@@ -73,4 +73,4 @@ Key | Type | Description | Example
 `Service` | `string` | Name of service | `my-service>`
 `UserHeader` | `string` | The name of header used to extract user identifier | `x-user-id`
 `FeatureHeaderPrefix` | `string` | The header's prefix for flag attatching to request to downstream service  | `openfeature_`
-`Flags` | `{ <flag>: <type> }` | list of flag to evaluate in open feature backend | `api_version: string|int|float|bool|object`
+`Flags` | `{ <flag>: <type> }` | list of flag to evaluate in open feature backend | `api_version: string\|int\|float\|bool\|object`
