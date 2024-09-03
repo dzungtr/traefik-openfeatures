@@ -1,0 +1,20 @@
+displayName: OpenFeature request headers 
+type: middleware
+# iconPath: .assets/icon.png
+
+import: github.com/dzungtr/traefil-openfeatures
+
+summary: 'Enrich request header with feature flags from OpenFeature compliance backend'
+
+testData:
+  Endpoint: http://localhost:9000
+  Provider: flipt
+  ContextHeaderKeys:
+    - organization
+    - user
+  Service: my-service
+  UserHeader: user
+  FeatureHeaderPrefix: openfeature_
+  Flags:
+    api_version: string
+    enable_check: bool
